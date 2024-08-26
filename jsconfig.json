@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",                           // Specifies the target JavaScript version
+    "module": "commonjs",                      // Specifies the module system
+    "strict": true,                            // Enables strict type-checking options
+    "esModuleInterop": true,                   // Enables compatibility with ES6 modules
+    "skipLibCheck": true,                      // Skips type checking of declaration files
+    "forceConsistentCasingInFileNames": true,  // Disallows inconsistently-cased references to the same file
+    "baseUrl": ".",                            // Sets the base URL for module resolution
+    "paths": {
+      "@/*": [
+        "./src/*"                              // Sets up the alias for the src directory
+      ]
+    }
+  },
+  "include": [
+    "src"                                      // Specifies the files to include in the compilation
+  ],
+  "exclude": [
+    "node_modules",                            // Specifies the files to exclude from the compilation
+    "dist"                                     // Specifies other directories to exclude from the compilation
+  ]
+}
